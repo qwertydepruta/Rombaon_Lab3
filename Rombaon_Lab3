@@ -1,0 +1,46 @@
+// The Clock class is designed to handle conversions between hours, minutes, and seconds.
+public class Clock{
+
+    // Converts seconds to minutes
+    public double secondsToMinutes(int seconds) {
+        return seconds / 60.0; // Divide seconds by 60 to get minutes
+    }
+
+    // Converts seconds to hours
+    public double secondsToHours(int seconds) {
+        return seconds / 3600.0; // Divide seconds by 3600 to get hours
+    }
+
+    // Converts minutes to seconds
+    public int minutesToSeconds(int minutes) {
+        return minutes * 60; // Multiply minutes by 60 to get seconds
+    }
+
+    // Converts minutes to hours
+    public double minutesToHours(int minutes) {
+        return minutes / 60.0; // Divide minutes by 60 to get hours
+    }
+
+    // Converts hours to seconds
+    public int hoursToSeconds(int hours) {
+        return hours * 3600; // Multiply hours by 3600 to get seconds
+    }
+
+    // Converts hours to minutes
+    public int hoursToMinutes(int hours) {
+        return hours * 60; // Multiply hours by 60 to get minutes
+    }
+
+    // Main method for testing the class
+    public static void main(String[] args) {
+        Clock clock = new Clock();
+
+        // Test each method
+        System.out.println("120 seconds to minutes: " + clock.secondsToMinutes(120));
+        System.out.println("3600 seconds to hours: " + clock.secondsToHours(3600));
+        System.out.println("2 minutes to seconds: " + clock.minutesToSeconds(2));
+        System.out.println("120 minutes to hours: " + clock.minutesToHours(120));
+        System.out.println("1 hour to seconds: " + clock.hoursToSeconds(1));
+        System.out.println("1 hour to minutes: " + clock.hoursToMinutes(1));
+    }
+}
